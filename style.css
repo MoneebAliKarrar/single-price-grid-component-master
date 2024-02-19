@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(218, 22%, 67%,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "karla";
+}
+main{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 318px 318px;
+    border-radius: .5em;
+    box-shadow: 0px 10px 1em hsl(218, 22%, 67%,.3);
+}
+.section-1{
+    grid-area: 1/span 2;
+    padding: 2.4em 2.5em 2.5em;
+    
+    
+}
+.section-1-1{
+    font-size: 1.5em;
+    margin: 0em 0em 1em;
+    letter-spacing: -.2px;
+    color: hsl(179, 62%, 43%);
+    font-weight: bold;
+
+}
+.section-1 h1{
+    color: hsl(71, 73%, 54%);
+    font-size: 1.1em;
+    margin: 0em 0em .8em;
+}
+.section-1-2{
+    font-size: 1em;
+    word-spacing: -.05em;
+    line-height: 1.6em;
+    color:  hsl(218, 22%, 67%);
+}
+.section-2{
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    padding: 2.5em 2.5em 2.5em;
+    border-bottom-left-radius: .5em;
+}
+.section-2-1{
+    font-size: 1.1em;
+    letter-spacing: .5px;
+    margin: 0em 0em 1em;
+}
+.section-2-2{
+    font-size: 2.1em;
+    margin : 0em 0em .2em 0em ;
+}
+.section-2-2 span{
+    font-size: .45em;
+    vertical-align: middle;
+    margin: 0em 0em 0em .3em;
+    color : hsl(204, 43%, 93%);
+
+
+}
+.section-2-3{
+    word-spacing: -.05em;
+}
+.section-2 a{
+    display: block;
+    background-color:hsl(71, 73%, 54%) ;
+    text-align: center;
+    text-decoration: none;
+    margin: 1.8em 0em 0em 0em;
+    padding: .9em;
+    border-radius: .5em;
+    color: white;
+}
+.section-3{
+    background-color:  hsl(179, 62%, 43% , .8);
+    padding: 2.5em 2.5em 2.5em;
+    color: white;
+    border-bottom-right-radius: .5em;
+}
+.section-3-1{
+    font-size: 1.1em;
+    font-weight: bold;
+    margin : 0em 0em 1.1em 0em;
+}
+.section-3-2{
+    list-style-type: none;
+    font-size: .9em;
+    line-height: 1.4em;
+    letter-spacing: -.3px;
+    color : hsl(204, 43%, 93%);
+}
+@media screen and (max-width:800px) {
+    body{
+        height: 150vh;
+    }
+    main{
+        grid-template-columns: 350px;
+    }
+    .section-1{
+        grid-area: 1/span 1;
+    }
+    .section-2{
+        border-bottom-left-radius: 0em;
+    }
+    .section-3{
+        border-bottom-left-radius: .5em;
+    }
+}
